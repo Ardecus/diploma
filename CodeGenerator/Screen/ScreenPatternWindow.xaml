@@ -1,0 +1,85 @@
+﻿<Window x:Class="Room.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Room"
+        mc:Ignorable="d"
+        Title="The Room" Height="450" Width="630">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Menu>
+                <MenuItem Header="Кімнати">
+                </MenuItem>
+                <MenuItem Header="Розклад">
+                </MenuItem>
+                <MenuItem Header="Елементи">
+                </MenuItem>
+            </Menu>
+            <ScrollViewer>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.ColumnSpan="7" Grid.Row="0" HorizontalAlignment="Center" FontSize="20">LCD-дісплей </Label>
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="48"/>
+                            <RowDefinition Height="24"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0">Текст:</Label>
+                        <TextBox Grid.Column="1" Grid.Row="0">Hello!
+                        </TextBox>
+                        <Label Grid.Column="0" Grid.Row="1">Затримка (сек):</Label>
+                        <TextBox Grid.Column="1" Grid.Row="1">5</TextBox>
+                    </Grid>
+                    <Button Grid.Column="2" Grid.Row="1">
+                        X
+                    </Button>
+
+                    <Grid Grid.Column="1" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="48"/>
+                            <RowDefinition Height="24"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Column="0" Grid.Row="0">Текст:</Label>
+                        <TextBox Grid.Column="1" Grid.Row="0">Hell !
+                        </TextBox>
+                        <Label Grid.Column="0" Grid.Row="1">Затримка (сек):</Label>
+                        <TextBox Grid.Column="1" Grid.Row="1">2</TextBox>
+                    </Grid>
+                    <Button Grid.Column="2" Grid.Row="3">
+                        X
+                    </Button>
+                    <Button Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="5">
+                        Додати стан
+                    </Button>
+                    <Button Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="7">
+                        Зберегти
+                    </Button>
+                </Grid>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</Window>

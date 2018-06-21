@@ -1,0 +1,6 @@
+﻿namespace Room
+{
+    interface ICodeGenerator
+    {
+    }
+}
